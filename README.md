@@ -1,4 +1,4 @@
-# learn-memory-archiver
+# Learn Memory Archiver
 
 Save lessons from Learn Memory.
 

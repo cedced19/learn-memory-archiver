@@ -10,13 +10,13 @@ var got = require('got'),
     isThere =  require('is-there');
 
 if (!isThere(__dirname + '/config.json')) {
-      log('You must create config.json file!', true);
-      process.exit(1);
+  log('You must create config.json file!', true);
+  process.exit(1);
 }
 
 if (!isUrl(require('./config.json').url)) {
-    log('You must set a valid url in config.json file!', true);
-    process.exit(1);
+  log('You must set a valid url in config.json file!', true);
+  process.exit(1);
 }
 
 if (!isThere(__dirname + '/saves')) {
@@ -26,7 +26,7 @@ if (!isThere(__dirname + '/saves')) {
 
 var save =  function () {
   var config = require('./config.json');
-  got(config.url + '/api/', function (err, data) {
+  got(config.url + '/api/long', function (err, data) {
        if (err) log('There was an error in getting data.', true);
        var name = moment().format('HH-mm-DD-MM-YYYY')  + '.json';
        fs.writeFile(process.cwd() + '/saves/' + name, data, function (err) {
