@@ -11,6 +11,9 @@
     "moment": "^2.11.1",
     "node-schedule": "^0.6.0"
   },
+  "scripts": {
+    "start": "node archiver.js"
+  },
   "repository": {
     "type": "git",
     "url": "git://github.com/cedced19/learn-memory-archiver"

@@ -24,7 +24,7 @@ if (!isThere(__dirname + '/saves')) {
   log('Saves directory created.', false);
 }
 
-var save =  function () {
+var save = function () {
   var config = require('./config.json');
   got(config.url + '/api/long', function (err, data) {
        if (err) log('There was an error in getting data.', true);
