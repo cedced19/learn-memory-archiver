@@ -11,3 +11,7 @@ $ cd ./learn-memory-archiver
 $ npm install
 $ npm start
 ```
+## Import data to mongo from a JSON file
+```bash
+$ mongoimport --db sails --collection lessons --file <json file's path> --jsonArray
+```
