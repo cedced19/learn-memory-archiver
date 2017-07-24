@@ -4,7 +4,9 @@
   "description": "Save lessons from Learn Memory",
   "main": "archiver.js",
   "dependencies": {
+    "async-each": "^1.0.1",
     "colors": "^1.1.2",
+    "download": "^6.2.5",
     "got": "^2.2.0",
     "is-there": "^4.3.0",
     "is-url": "^1.2.1",
@@ -31,7 +33,7 @@
   "licenses": [
     {
       "type": "MIT",
-      "url": "http://cedced19.github.io/license/"
+      "url": "http://cedced19.github.io/licence/"
     }
   ]
 }
