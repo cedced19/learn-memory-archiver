@@ -11,7 +11,8 @@
     "is-there": "^4.3.0",
     "is-url": "^1.2.1",
     "moment": "^2.11.1",
-    "node-schedule": "^0.6.0"
+    "node-schedule": "^0.6.0",
+    "timed-colored-log": "0.0.0"
   },
   "scripts": {
     "start": "node archiver.js"
